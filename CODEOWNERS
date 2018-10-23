@@ -6,18 +6,3 @@
 # @global-owner1 and @global-owner2 will be requested for
 # review when someone opens a pull request.
 *       @mlp6 @suyashkumar @dward2
-
-# Order is important; the last matching pattern takes the most
-# precedence. When someone opens a pull request that only
-# modifies JS files, only @js-owner and not the global
-# owner(s) will be requested for a review.
-*.js    @mlp6 @suyashkumar @dward2
-
-# In this example, @doctocat owns any files in the build/logs
-# directory at the root of the repository and any of its
-# subdirectories.
-/build/logs/ @mlp6 @suyashkumar @dward2
-
-# In this example, @octocat owns any file in an apps directory
-# anywhere in your repository.
-apps/ @mlp6 @suyashkumar @dward2
