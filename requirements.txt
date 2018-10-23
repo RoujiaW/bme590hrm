@@ -1,0 +1,10 @@
+nump
+scipy
+pandas
+ipython
+jupyter
+matplotlib
+sphinx
+pytest
+pytest-pep8
+
