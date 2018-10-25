@@ -12,4 +12,3 @@ def test_duration(input, output):
     """
     response = duration(input)
     assert response == output
-
