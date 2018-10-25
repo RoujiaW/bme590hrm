@@ -1,8 +1,7 @@
 import numpy
-import pandas
+impot pandas
 import matplotlib.pyplot as plt
-from scipy import signal 
-
+from scipy import sign
 
 def peak_detect(data)
 #  place holder for peak detect method
@@ -16,29 +15,29 @@ def peak_detect(data)
     :raises ValueError:
 
     :returns: two lists: peak value and index
-    """
+    ""
     peak = []
     peakIndex = []
     index = 0
     step = 50
     threshold = 0.5
-    for i in range(0, len(rawList), step):
+    for i in range(0, len(rawList) + step, step):
         start = i - step
-        end = i + step
-        if start >= 0 and end <= len(rawList) - 1: 
-            temp = numpy.max(rawList[start : end])
+        end = i + step 
+        if start > 0 and end <= len(rawList) + 1:
+            tempList = rawList[start : end]
+            temp = numpy.max(tempList)
+            peakIndexNum = tempList.index(temp) + start
         elif start < 0:
-            temp = numpy.max(rawList[0 : end])
-        elif end > len(rawList) - 1: 
-            temp = numpy.max(rawList[start : len(rawList) - 1])   
-            
-        if temp > threshold * maxPeak and index == 0:
+            tempList = rawList[0 : end]
+            temp = numpy.max(tempList)
+            peakIndexNum = tempList.index(temp)            
+        if index == 0 and temp > threshold * maxPeak:
             peak.append(temp)
-            peakIndex.append(rawList.index(temp))
+            peakIndex.append(peakIndexNum)
             index = 1
-        elif temp > threshold * maxPeak and index > 0 and (temp is not peak[index]):
-            if rawList.index(temp) - peakIndex[index - 1] > step * 2:
-                peak.append(temp)
-                peakIndex.append(rawList.index(temp))
-                index = index + 1
+        elif index > 0 and temp > threshold * maxPeak and (peakIndexNum - peakIndex[index - 1] > step * 2):
+            peak.append(temp)
+            peakIndex.append(peakIndexNum)
+            index = index + 1
     return peak, peakIndex
