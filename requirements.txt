@@ -7,4 +7,3 @@ matplotlib
 sphinx
 pytest
 pytest-pep8
-
