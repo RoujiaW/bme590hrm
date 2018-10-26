@@ -4,7 +4,7 @@ from num_beats import num_beats
 
 @pytest.mark.parametrize("input, output", [
     ([1, 2, 3, 4], 4),
-    ([1, 2, 3], 3),
+    ([1, 3], 2),
     ([2], 1),
     ([], 0),
 ])
