@@ -1,5 +1,5 @@
 def num_beats(rawList):
-    try: 
+    try:
         return len(rawList)
     except TypeError:
         print("Wrong type of input.")
