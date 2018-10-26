@@ -1,9 +1,8 @@
 import numpy
 import pandas
-import matplotlib.pyplot as plt
 
 
-def peak_detect(data):
+def peak_detect(rawList):
     peak = []
     peakIndex = []
     index = 0
