@@ -19,9 +19,9 @@ def voltage_extremes(data):
         logging.basicConfig(filename='example.log', level=logging.DEBUG,
                             filemode='w')
     voltage_extremes = ()
-    try: 
-        maximum =  numpy.max(rawData)
-        minimum = numpy.min(rawData)
+    try:
+        maximum = numpy.max(data)
+        minimum = numpy.min(data)
         voltage_extremes = (minimum, maximum)
         return voltage_extremes
     except ValueError:
