@@ -1,7 +1,7 @@
 import pandas
 
 
-def fileImport(filename):
+def readFile(filename):
     """
     import a ECG CSV file based on the string given
     :param filename: a string
