@@ -5,7 +5,7 @@ from scipy import signal
 def findPeak(data):
     """
     import a list of voltage to perform denoise and correlation
-    :param filename: a list
+    :param data: a list
     :raises ImportError:  if the logging module not found
     :returns: return a list of peak
     :rtype: list
