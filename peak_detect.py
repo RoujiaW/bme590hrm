@@ -1,8 +1,22 @@
 import numpy
-import pandas
 
 
 def peak_detect(rawList):
+    """
+    import a list of processed voltage
+    :param filename: a list
+    :raises ImportError:  if the logging module not found
+    :returns: return a list of R peaks and its index
+    :rtype: lists
+    """
+    try:
+        import logging
+    except ImportError:
+        print("Could not import logging module")
+        return
+    else:
+        logging.basicConfig(filename='example.log', level=logging.DEBUG,
+                            filemode='w')
     peak = []
     peakIndex = []
     index = 0
