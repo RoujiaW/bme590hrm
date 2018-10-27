@@ -72,11 +72,11 @@ class ECG():
         return self.mean_hr
 
     def writejson(self):
-        metrics = {"mean_hr_bpm": "self.mean_hr",
-                   "voltage_extremes": "self.extremes",
-                   "duration": "self.durationTime",
-                   "num_beats": "self.beatNum",
-                   "time_beats": "self.beatTime"}
+        metrics = {"mean_hr_bpm": str(self.mean_hr),
+                   "voltage_extremes": str(self.extremes),
+                   "duration": str(self.durationTime),
+                   "num_beats": str(self.beatNum),
+                   "time_beats": str(self.beatTime)}
         name = self.filename.replace('.csv', '.json')
         with open(name, "w") as x:
             json.dump(metrics, x)
