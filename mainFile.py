@@ -1,6 +1,6 @@
 def mainFile():
     from ECG_class import ECG
-    signals = ECG("test_data1.csv")
+    signals = ECG(filename="test_data1.csv")
     signals.writejson()
 
 
