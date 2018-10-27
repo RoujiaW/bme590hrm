@@ -1,5 +1,5 @@
 import pytest
-from functions.readFile import fileImport
+from functions.readFile import readFile
 
 
 def test_readFile():
