@@ -4,7 +4,7 @@ import numpy
 def peak_detect(rawList):
     """
     import a list of processed voltage
-    :param filename: a list
+    :param rawList: a list
     :raises ImportError:  if the logging module not found
     :returns: return a list of R peaks and its index
     :rtype: lists
