@@ -1,12 +1,12 @@
-from functions import readFile
-from functions import peak_detect
-from functions import findPeak
-from functions import duration
-from functions import voltage_extremes
-from functions import num_beats
-from functions import userInput
-from functions import time_beats
-from functions import mean_hr_bpm
+from functions.readFile import readFile
+from functions.peak_detect import peak_detect
+from functions.findPeak import findPeak
+from functions.duration import duration
+from functions.voltage_extremes import voltage_extremes
+from functions.num_beats import num_beats
+from functions.userInput import userInput
+from functions.time_beats import time_beats
+from functions.mean_hr_bpm import mean_hr_bpm
 import json
 
 
