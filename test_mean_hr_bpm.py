@@ -1,5 +1,5 @@
 import pytest
-from mean_hr_bpm import mean_hr_bpm
+from functions.mean_hr_bpm import mean_hr_bpm
 
 
 @pytest.mark.parametrize("input1, input2, input3, output", [

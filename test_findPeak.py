@@ -1,6 +1,6 @@
 import pytest
 import numpy
-from findPeak import findPeak
+from functions.findPeak import findPeak
 
 
 def test_findPeak():

@@ -1,5 +1,5 @@
 import pytest
-from peak_detect import peak_detect
+from functions.peak_detect import peak_detect
 
 
 def test_peak_detect():
