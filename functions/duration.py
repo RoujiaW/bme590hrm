@@ -1,7 +1,7 @@
 def duration(rawData):
     """
     import a list of time points from ECG
-    :param filename: a list
+    :param rawData: a list
     :raises ImportError:  if the logging module not found
     :raises IndexError: if a empty list is given
     :raises TypeError: if the input is not a list
