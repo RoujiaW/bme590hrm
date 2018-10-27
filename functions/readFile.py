@@ -1,7 +1,7 @@
 import pandas
 
 
-def readFile(filename):
+def readFile(fName):
     """
     import a ECG CSV file based on the string given
     :param filename: a string
@@ -20,11 +20,11 @@ def readFile(filename):
                             filemode='w')
     time = []
     voltage = []
-    if type(filename) is not str:
+    if type(fName) is not str:
         raise TypeError("Please input filename as \'test_data1.csv'")
         logging.error("Wrong type of input")
     try:
-        data = pandas.read_csv(filename, names=["time", "voltage"])
+        data = pandas.read_csv(fName, names=["time", "voltage"])
         time = data.time.tolist()
         voltage = data.voltage.tolist()
         logging.info("Read CSV file and retrieve time and voltage information")
