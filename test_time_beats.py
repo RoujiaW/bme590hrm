@@ -1,5 +1,5 @@
 import pytest
-from time_beats import time_beats
+from functions.time_beats import time_beats
 
 
 @pytest.mark.parametrize("input1, input2, output", [

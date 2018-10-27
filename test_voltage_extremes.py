@@ -1,5 +1,5 @@
 import pytest
-from voltage_extremes import voltage_extremes
+from functions.voltage_extremes import voltage_extremes
 
 
 @pytest.mark.parametrize("input, output", [
