@@ -2,10 +2,10 @@ import pytest
 from functions.readFile import fileImport
 
 
-def test_fileImport():
+def test_readFile():
     with pytest.raises(TypeError):
-        fileImport(20)
+        readFile(20)
     with pytest.raises(TypeError):
-        fileImport(None)
-    assert ([], []) == fileImport("test")
-    assert ([], []) == fileImport("")
+        readFile(None)
+    assert ([], []) == readFile("test")
+    assert ([], []) == readFile("")
