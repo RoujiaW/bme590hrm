@@ -12,7 +12,7 @@ import json
 
 class ECG():
     """
-    returns various attributes
+    create a ECG class and include related parameters
     :param self: the name of data
     :type self: string
     :param self.time: the list of test time
@@ -21,7 +21,7 @@ class ECG():
     :param self.durationTime: time duration of the ECG strip
     :param self.beatNum:number of detected beats in the strip
     :param self.beatTime:numpy array of times when a beat occurred
-    :return: different attributes
+    :return: json file
     """
     def __init__(self, filename=""):
         self.filename = filename
